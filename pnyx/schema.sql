@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS discussions;
 CREATE TABLE users (
     id_user INTEGER PRIMARY KEY AUTOINCREMENT,
     user_name VARCHAR(255) UNIQUE NOT NULL,
+    password TEXT NOT NULL,
     first_name VARCHAR(255),
     last_name VARCHAR(255),
     email VARCHAR(255) NOT NULL
